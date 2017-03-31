@@ -1,0 +1,28 @@
+<%- contentFor('hero') %>
+<section class="hero">
+	<div class="hero-content">
+		<h2>About Me</h2>
+		<p>A team of one</p>
+
+		<a href="/contact" class="btn btn-lg btn-primary">Feel free to reach out!</a>
+	</div>
+</section>
+
+
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+	<h1>The Team</h1>
+
+	<div class="row">
+		<% for (user of users) { %>
+			<div class="col-sm-3">
+				<h2><%= user.name %>
+				<img src="<%= user.avatar %>" alt="" class="img-responsive">
+			</div>
+
+		<% } %>
+	</div>
+			
+	
+</div>
+	

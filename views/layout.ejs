@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-		<nav class= "navbat navbar inverse">
+		<nav class= "navbar navbar-inverse">
 			<a href="/" class= "navbar-brand">My First Node Site</a>
 			<ul class="nav navbar-nav">
 				<li><a href="/">Home</a></li>
@@ -20,27 +20,21 @@
 		</nav>
 	</header>
 
-	<section class="hero">
-		<div class="hero-content">
-			<h2>Welcome to the site!</h2>
-			<p>The only place to be</p>
 
-			<a href="/" class="btn btn-lg btn-primary">Get Started</a>
-			<a href="/" class="btn btn-lg btn-primary">Contact</a>
-		</div>
-	</section>
+			<!-- MAIN CONTENT HERE -->
+
+		<%- defineContent('hero') %>
+
 
 	<main>
 		<div class="container">
-			<div class="jumbotron text-center">
-				Home Page
-			</div>
+			<%- body %>
 		</div>
 	</main>
 
 
 	<footer>
-		Awesome Site. Copyright &copy 2016
+		Awesome Site. Copyright &copy 2017
 	</footer>
 </body>
 </html>
